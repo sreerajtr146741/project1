@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce website model</title>
+    <title>My Ecommerce website model</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +12,24 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="header" id="home-section">
 
     <div class="container">
     <div class="navbar">
         <div class="logo">
-            <img src="images/logo.png" width="125px"  alt="logo image">
+            <img src="images/logo.png" width="60px"  height="55px" alt="logo image">
         </div>
         <nav>
             <ul>
-                <li><a href="">HOME</a></li>
-                 <li><a href="">PRODUCTS</a></li>
-                  <li><a href="">ABOUT</a></li>
-                   <li><a href="">CONTACT</a></li>
+                <li><a href="#home-section">HOME</a></li>
+                 <li><a href=" #products-section">PRODUCTS</a></li>
+                  <li><a href="#about-section">ABOUT</a></li>
+                   <li><a href="#contacts-section">CONTACT</a></li>
+                   <img src="images/icons8-cart-50.png" class="cart" width="30px" height="30px">
+              <img src="images/icons8-menu-50.png" class="menu-icon">
             </ul>
         </nav>
+        
     </div>
     <div class="row">
         <div class="col-2">
@@ -56,7 +59,7 @@
 </div>
 </div>
 <!-----featured productz-------->
- <div class="small-container">
+ <div class="small-container" id="products-section">
     <h2 class="Title">Featured Products</h2>
     <div class="row">
         <div class="col-4">
@@ -261,7 +264,7 @@
 <!------OFFERS-------->
 
 
-    <div class="offer">
+    <div class="offer"">
         <div class="row">
 
             <!-- Left: Image (50% width) -->
@@ -273,7 +276,7 @@
             <div class="row text-col">
                 <p>EXCLUSIVELY AVAILABLE ON OUR WEBSITE</p>
                 <h1>HP LAPTOP</h1>
-                <small>
+            <small>
                     A laptop’s specifications can make a big difference in its performance, so it’s essential to be informed.<br>
                     Choosing the correct specifications for your laptop can significantly enhance its performance and user-friendliness.<br>
                 </small>
@@ -354,6 +357,19 @@
 <div class="footer">
     <div class="container">
         <div class="row">
+             <section class="about" id="about-section">
+                <div class="container">
+                    <h3>About us</h3>
+                    <p>Welcome to <b>MyShop</b>, your trusted online shopping destination.  
+        We provide a wide range of products including electronics, fashion, 
+        home essentials, and more — all at affordable prices. </p>
+<p>
+        Our mission is to deliver quality products and a smooth shopping 
+        experience right to your doorstep. We are committed to excellent 
+        service, fast delivery, and secure transactions.
+    </p>  
+              </div>
+            </section>
             <div class="footer-col-1">
                 <h3>
                     Download Your App
@@ -363,9 +379,32 @@
             <div class="footer-col-2">
                 <img src="images/logo.png">
                 <p>Our Purpose Is To Sustainably Make the PLeasure and Benefits of soprts Accessible to the many.</p>
-
+            </div>
+            <div class="footer-col-3">
+                <h3>
+                    Useful Links
+                </h3>
+                <ul>
+                    <li>Coupons </li>
+                      <li>Blog Post </li>
+                        <li>Return Policy</li>
+                          <li>Join Affiliate </li>
+                </ul>
+            </div>
+            <div class="footer-col-4" id="contacts-section">
+                <h3>
+                Follow us
+                </h3>
+                <ul>
+                    <li>Facebook </li>
+                      <li>Twitter</li> </li>
+                        <li>Instagram</li>
+                          <li>YouTube </li>
+                </ul>
             </div>
         </div>
+        <hr>
+        <p class="copyright">Copyright 2025 </p>
     </div>
 </div>
 
